@@ -1,0 +1,17 @@
+#search-section ul{
+    position: absolute;
+    z-index: 100;
+}
+#search-section ul li{
+    padding: 7px;
+}
+
+#search-section ul li:hover{
+    cursor: pointer;
+    background-color: rgb(216, 228, 240);
+}
+
+#categories a{
+    text-decoration: none;
+    color: black;
+}
