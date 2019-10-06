@@ -18,7 +18,7 @@
                 </li>
             </ul>
 
-            <a href="<?=(isset($path))? $path : ''?>=announces"> <button class='navbar-nav btn btn-warning px-3 py-3'>Consulter les annonces</button></a>
+            <a href="<?=(isset($path))? $path : ''?>=announces" class='navbar-nav btn btn-warning px-3 py-3'>Consulter les annonces</a>
         </div>
     </nav>
 </div>
