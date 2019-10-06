@@ -18,12 +18,10 @@
                 </li>
             </ul>
 
-<<<<<<< HEAD
             <a href="<?=(isset($path))? $path : ''?>=announces" class='navbar-nav btn btn-warning px-3 py-3'>Consulter les annonces</a>
-=======
-            <a href="<?=(isset($path))? $path : ''?>=announces"> <button class='navbar-nav btn btn-warning px-3 py-3'>Consulter les annonces</button></a>
-            <a href="<?=(isset($path))? $path : ''?>=login"> <button class='navbar-nav btn btn-primary px-3 py-3'>Déposer une annonce</button></a>
->>>>>>> 0d11d430c6d8a63826e28f20325f7fdaf0ef9078
+
+            <a href="<?=(isset($path))? $path : ''?>=login" class='navbar-nav btn btn-primary px-3 py-3'>Déposer une annonce</a>
+
         </div>
     </nav>
 </div>
