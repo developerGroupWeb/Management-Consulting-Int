@@ -1,0 +1,131 @@
+<?php include 'includes/header.php';?>
+<?php include 'templates/nav.php';?>
+
+    <title>Management Consulting Int</title>
+
+    <section id='categories' class='py-5'>
+        <div class='container py-5 '>
+            <div class='row'>
+                <a href="" class='col-md py-5 px-2 bg-light'>
+                    <div class='row '>
+                        <h5 class="mx-auto text-center">EMPLOI</h5>
+                    </div>
+                </a>
+
+                <a href="" class='col-md py-5 px-2 bg-light ml-md-3 mx-lg-3 mt-4 mt-md-0'>
+                    <div class='row  '>
+                        <h5 class='mx-auto text-center'>SERVICES</h5>
+                    </div>
+                </a>
+
+                <div class='w-100 d-none d-sm-block d-lg-none'></div>
+
+                <a href="" class='col-md py-5 px-2 bg-light mt-4 mt-lg-0'>
+                    <div class='row'>
+                        <h5 class="mx-auto text-center">Cours & Formation</h5>
+                    </div>
+                </a>
+
+                <a href="" class='col-md py-5 px-2 bg-light ml-md-3 mt-4 mt-lg-0'>
+                    <div class='row'>
+                        <h5 class='mx-auto text-center'>MATÉRIEL PROFESSIONNEL</h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class='row mt-4'>
+                <a href="" class='col-md py-5 px-2 bg-light'>
+                    <div class='row '>
+                        <h5 class="mx-auto text-center">ACHAT - VENTE</h5>
+                    </div>
+                </a>
+
+                <a href="" class='col-md py-5 px-2 bg-light ml-md-3 mx-lg-3 mt-4 mt-md-0'>
+                    <div class='row  '>
+                        <h5 class='mx-auto text-center'>Immobilier</h5>
+                    </div>
+                </a>
+
+                <div class='w-100 d-none d-sm-block d-lg-none'></div>
+
+                <a href="" class='col-md py-5 px-2 bg-light mt-4 mt-lg-0'>
+                    <div class='row'>
+                        <h5 class="mx-auto text-center">Véhicules</h5>
+                    </div>
+                </a>
+
+                <a href="" class='col-md py-5 px-2 bg-light ml-md-3 mt-4 mt-lg-0'>
+                    <div class='row'>
+                        <h5 class='mx-auto text-center'>Electronique-Média</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class='pb-5'>
+        <div class='container'>
+            <div class='row my-4'>
+                <h2 class=''>Annonces récentes</h2>
+            </div>
+
+            <div class="card-deck">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Prix</p>
+                        <p class="card-text">Categorie</p>
+                        <p class="card-text">Ville</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Prix</p>
+                        <p class="card-text">Categorie</p>
+                        <p class="card-text">Ville</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+
+                <div class='w-100 d-none d-sm-block d-lg-none'></div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Prix</p>
+                        <p class="card-text">Categorie</p>
+                        <p class="card-text">Ville</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Prix</p>
+                        <p class="card-text">Categorie</p>
+                        <p class="card-text">Ville</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<?php include 'templates/footer.php';?>
+
+</body>
+</html>
