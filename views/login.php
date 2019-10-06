@@ -81,7 +81,6 @@
                                 <div class="input-group-text"><i class="fa fa-eye" aria-hidden="true" style="cursor:pointer;" onclick="showHidePassword('#mobil #password')"></i><i class="fa fa-eye-slash d-none" aria-hidden="true" style="cursor:pointer;" onclick="showHidePassword('#mobil #password')"></i></div>
                             </div>
                         </div>
-
                         <span class="text-danger error-password font-italic"><?= $validate->error("password")?></span>
                     </div>
                 </div>
@@ -98,5 +97,6 @@
 
     </div>
 </div>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/login.js"></script>
