@@ -8,5 +8,5 @@ spl_autoload_register(function ($class){
     require_once realpath('models/'.$class.'.php');
 });
 
-$validator = new Validator;
+$validate = new Validator;
 $announces = new Announces;
