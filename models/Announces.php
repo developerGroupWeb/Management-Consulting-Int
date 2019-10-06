@@ -45,7 +45,6 @@ class Announces extends Db
      * @param $action
      * @param $table
      * @param array $where
-     * @param null $orderBy
      * @return $this|bool
      */
     // [ORDER BY id DESC]
@@ -80,6 +79,12 @@ class Announces extends Db
         return false;
     }
 
+    /**
+     * @param $action
+     * @param $table
+     * @param $orderBy
+     * @return $this
+     */
     private function actionBy($action, $table, $orderBy){
 
         $order = (gettype($orderBy) == 'string' && strlen($orderBy) > 8) ? $orderBy : '';
