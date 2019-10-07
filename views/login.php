@@ -1,18 +1,19 @@
 
-<div class="d-none d-sm-block">
+<div class="">
 
     <?php include 'includes/message_flash.php'?>
 
-    <div class="col-lg-6 offset-lg-3 col-sm-8 offset-sm-2 singin-content pb-5">
-        <div class="row">
-            <div class="col-md-9 col-sm-12">
-                <div class="row">
-                    <h4>Administraction </h4>
-                </div>
-                <div class="row mr-5">
-                    <p>Saisis tes identifiants de connexion.</p>
+    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 singin-content px-4">
+        <div class="row" style='margin-top: 100px; margin-bottom: 150px;'>
+            <div class="col-12">
+                <div class="row py-4">
+                    <h4 class='mx-auto'>Administration </h4>
                 </div>
                 <div class="row">
+                    <p class='mx-auto'>Saisis tes identifiants de connexion.</p>
+                </div>
+                <div class="row">
+                    
                     <form method="post" action="" class="col-sm-12" id="form-login">
                         <div class="form-group row mb-4">
                             <label for="email" class="mr-4">Identifiant</label>
@@ -36,11 +37,11 @@
                             </div>
                         </div>
 
-                        <div class="singin-btn-validate" style="margin-left: 100px;">
-                            <button type="submit" name="login"  class="btn font-weight-bold btn-primary" role="button">Se connecter</button>
+                        <div class="singin-btn-validate row">
+                            <button type="submit" name="login"  class="btn font-weight-bold btn-primary mx-auto px-4" role="button">Se connecter</button>
                         </div>
                     </form>
-
+                    
                 </div>
             </div>
 
@@ -49,22 +50,13 @@
 
 </div>
 
-<!--singin page on mobile-->
+<!--singin page on mobile-
 <div class="mobile-bg d-block d-sm-none" style="height: 100vh;">
-    <div class="container wow fadeInLeft">
-        <div class="row">
-            <div class="col-12">
-                <div class="row">
-                    <div class="mx-auto mt-4 d-inline-flex">
-                        <a href="index.php"><img src="images/Logo45.png" style="width: 150px; height: 30px; margin-bottom: 80px;"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container py-5">
 
         <?php include 'includes/message_flash.php'?>
 
-        <div class="row pl-4">
+        <div class="row pl-4 mt-5">
             <form method="post" action="" class="col-12" id="form-login">
                 <div class="form-group row mb-4">
                     <div class="col-12">
@@ -88,7 +80,7 @@
                 <div class="col-10">
                     <div class="row">
                         <div class='mx-auto'>
-                            <button type="submit" name="login" class="btn btn-primary px-5 font-weight-bold" role="button">Se connecter</button>
+                            <button type="submit" name="login" class="btn btn-primary px-4 font-weight-bold" role="button">Se connecter</button>
                         </div>
                     </div>
                 </div>
@@ -96,7 +88,7 @@
         </div>
 
     </div>
-</div>
+</div>-->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/login.js"></script>
