@@ -5,6 +5,10 @@ class CounterView extends Announces
 {
     private $file = 'data/counter.txt';
 
+    /**
+     * @param $ip_addr
+     * @param $article_id
+     */
     function add_view($ip_addr, $article_id){
 
         $date = time();
