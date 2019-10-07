@@ -6,7 +6,7 @@
     <section id='categories' class='py-5'>
         <div class='container py-5 '>
             <div class='row'>
-                <a href="" class='col-md py-5 px-2 box1'>
+                <a href="<?=(isset($path))? $path : ''?>=announces&category=emploi" class='col-md py-5 px-2 box1'>
                     <div class='row'>
                         <h5 class="mx-auto text-center font-weight-bold">EMPLOI</h5>
                         <div style=" position: absolute; top:0; left:0; background-color: #000;"></div>
@@ -14,7 +14,7 @@
                     
                 </a>
 
-                <a href="" class='col-md py-5 px-2 bg-light ml-md-3 mx-lg-3 mt-4 mt-md-0 box2'>
+                <a href="<?=(isset($path))? $path : ''?>=announces&category=services" class='col-md py-5 px-2 bg-light ml-md-3 mx-lg-3 mt-4 mt-md-0 box2'>
                     <div class='row  '>
                         <h5 class='mx-auto text-center'>SERVICES</h5>
                     </div>
@@ -22,13 +22,13 @@
 
                 <div class='w-100 d-none d-sm-block d-lg-none'></div>
 
-                <a href="" class='col-md py-5 px-2 bg-light mt-4 mt-lg-0 box3'>
+                <a href="<?=(isset($path))? $path : ''?>=announces&category=cours-formation" class='col-md py-5 px-2 bg-light mt-4 mt-lg-0 box3'>
                     <div class='row'>
                         <h5 class="mx-auto text-center">Cours & Formation</h5>
                     </div>
                 </a>
 
-                <a href="" class='col-md py-5 px-2 bg-light ml-md-3 mt-4 mt-lg-0 box4'>
+                <a href="<?=(isset($path))? $path : ''?>=announces&category=materiel-professionnel" class='col-md py-5 px-2 bg-light ml-md-3 mt-4 mt-lg-0 box4'>
                     <div class='row'>
                         <h5 class='mx-auto text-center'>MATÉRIEL PROFESSIONNEL</h5>
                     </div>
@@ -36,13 +36,13 @@
             </div>
 
             <div class='row mt-4'>
-                <a href="" class='col-md py-5 px-2 bg-light box5'>
+                <a href="<?=(isset($path))? $path : ''?>=announces&category=achat-vente" class='col-md py-5 px-2 bg-light box5'>
                     <div class='row '>
                         <h5 class="mx-auto text-center">ACHAT - VENTE</h5>
                     </div>
                 </a>
 
-                <a href="" class='col-md py-5 px-2 bg-light ml-md-3 mx-lg-3 mt-4 mt-md-0 box6'>
+                <a href="<?=(isset($path))? $path : ''?>=announces&category=immobilier" class='col-md py-5 px-2 bg-light ml-md-3 mx-lg-3 mt-4 mt-md-0 box6'>
                     <div class='row  '>
                         <h5 class='mx-auto text-center'>Immobilier</h5>
                     </div>
@@ -50,13 +50,13 @@
 
                 <div class='w-100 d-none d-sm-block d-lg-none'></div>
 
-                <a href="" class='col-md py-5 px-2 bg-light mt-4 mt-lg-0 box7'>
+                <a href="<?=(isset($path))? $path : ''?>=announces&category=vehicules" class='col-md py-5 px-2 bg-light mt-4 mt-lg-0 box7'>
                     <div class='row'>
                         <h5 class="mx-auto text-center">Véhicules</h5>
                     </div>
                 </a>
 
-                <a href="" class='col-md py-5 px-2 bg-light ml-md-3 mt-4 mt-lg-0 box8'>
+                <a href="<?=(isset($path))? $path : ''?>=announces&category=electronique-media" class='col-md py-5 px-2 bg-light ml-md-3 mt-4 mt-lg-0 box8'>
                     <div class='row'>
                         <h5 class='mx-auto text-center'>Electronique-Média</h5>
                     </div>
