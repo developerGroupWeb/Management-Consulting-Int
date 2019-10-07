@@ -72,24 +72,26 @@
 
             <div class="card-deck">
                 <div class="card">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <a href="<?=(isset($path))? $path : ''?>=show&id=1254789"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Prix</p>
                         <p class="card-text">Categorie</p>
                         <p class="card-text">Ville</p>
+                        <p class="card-text"><?=$counter->number_views('1254789')?></p>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">Last updated 3 mins ago</small>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <a href="<?=(isset($path))? $path : ''?>=show&id=12547"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Prix</p>
                         <p class="card-text">Categorie</p>
                         <p class="card-text">Ville</p>
+                        <p class="card-text"><?=$counter->number_views('12547')?></p>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">Last updated 3 mins ago</small>
@@ -99,24 +101,26 @@
                 <div class='w-100 d-none d-sm-block d-lg-none'></div>
 
                 <div class="card">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <a href="<?=(isset($path))? $path : ''?>=show&id=125784"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Prix</p>
                         <p class="card-text">Categorie</p>
                         <p class="card-text">Ville</p>
+                        <p class="card-text"><?=$counter->number_views('125784')?></p>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">Last updated 3 mins ago</small>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <a href="<?=(isset($path))? $path : ''?>=show&id=125484"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Prix</p>
                         <p class="card-text">Categorie</p>
                         <p class="card-text">Ville</p>
+                        <p class="card-text"><?=$counter->number_views('125484')?></p>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">Last updated 3 mins ago</small>
@@ -128,5 +132,7 @@
 
 <?php include 'templates/footer.php';?>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

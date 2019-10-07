@@ -14,7 +14,7 @@ abstract class Db
     {
         try
         {
-            $this->pdo = new PDO('mysql:host=localhost; dbname=hartman; charset=utf8', 'root', '');
+            $this->pdo = new PDO('mysql:host=localhost; dbname=management-consulting; charset=utf8', 'root', '');
         }catch(PDOException $e)
         {
             die($e->getMessage());

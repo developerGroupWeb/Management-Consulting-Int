@@ -9,7 +9,7 @@ $email = $validate->post('string');
 
 $err = [];
 
-$row = $announces->get('admin', ['admin', '=', $email]);
+$row = $announces->get('admins', ['user_name', '=', $email]);
 
 if($row->count() == 0){
     $err['error'] = "This email or number doesn't correspond to a user";
