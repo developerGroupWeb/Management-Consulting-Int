@@ -9,7 +9,6 @@
                 <a href="" class='col-md py-5 px-2 box1'>
                     <div class='row'>
                         <h5 class="mx-auto text-center font-weight-bold">EMPLOI</h5>
-                        <div style=" position: absolute; top:0; left:0; background-color: #000;"></div>
                     </div>
                     
                 </a>
