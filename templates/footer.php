@@ -1,4 +1,4 @@
-<section id='footer' class='bg-dark py-4 mt-5 fixed-bottom'>
+<section id='footer' class='bg-dark py-4' style='margin-top: 100px;'>
     <footer class='container text-center text-white'>
         <div class='row nav'>
             <div class=''>

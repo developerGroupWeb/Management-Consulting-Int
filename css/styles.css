@@ -94,10 +94,10 @@
     font-size: 1.25em;
     font-weight: 700;
     color: white;
-    background-color: rgb(183, 207, 241);
+    background-color: rgb(192, 192, 192);
     display: inline-block;
     cursor: pointer;
-    padding: 50px;
+    padding: 30px 60px;
 }
 
 .form-control-file:focus + label,
