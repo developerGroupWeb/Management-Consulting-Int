@@ -17,9 +17,18 @@
 }
 
 #categories h5{
-    background-color: rgb(22, 134, 233);
+    background-color: rgba(22, 135, 233, 0.486);
     padding: 8px; 
     border-radius: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#categories a:hover h5{
+    background-color: rgba(22, 135, 233, 0.952);
+    padding: 8px; 
+    border-radius: 12px;
+    font-weight: bold;
 }
 
 #categories .box1{
@@ -69,4 +78,29 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+
+.form-control-file{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.form-control-file + label{
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(183, 207, 241);
+    display: inline-block;
+    cursor: pointer;
+    padding: 50px;
+}
+
+.form-control-file:focus + label,
+.form-control-file:hover + label{
+    background-color: rgb(59, 72, 255);
 }
