@@ -103,7 +103,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Prix</p>
-                        <p class="card-text">Categorie</p>
+                        <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> Categorie</p>
                         <p class="card-text">Ville</p>
                         <p class="card-text"><?=$counter->number_views('1254789')?></p>
                     </div>
@@ -116,7 +116,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Prix</p>
-                        <p class="card-text">Categorie</p>
+                        <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> Categorie</p>
                         <p class="card-text">Ville</p>
                         <p class="card-text"><?=$counter->number_views('12547')?></p>
                     </div>
@@ -132,7 +132,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Prix</p>
-                        <p class="card-text">Categorie</p>
+                        <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> Categorie</p>
                         <p class="card-text">Ville</p>
                         <p class="card-text"><?=$counter->number_views('125784')?></p>
                     </div>
@@ -145,7 +145,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Prix</p>
-                        <p class="card-text">Categorie</p>
+                        <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> Categorie</p>
                         <p class="card-text">Ville</p>
                         <p class="card-text"><?=$counter->number_views('125484')?></p>
                     </div>

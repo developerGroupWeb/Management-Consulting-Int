@@ -1,4 +1,4 @@
-<div class='conatainer-fluid'>
+<div class='container-fluid'>
     <div class='row'>
         <div class='col-md-3 bg-secondary'>
             <div class='row'>
@@ -65,6 +65,19 @@
                                 <option value=''>Entreprise</option>
                                 </select>
                             </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-8">
+                                <label for="inputPrice">Prix</label>
+                                <input type="text" class="form-control" id="inputPrice">
+                                </div>
+                                <div class="form-group col-md-4">
+                                <label for="inputDevise">Devise</label>
+                                <select id="inputDevise" class="form-control">
+                                    <option value='' selected>CFA</option>
+                                    <option>...</option>
+                                </select>
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label for="ControlTextarea">Description</label>
                                 <textarea class="form-control" id="ControlTextarea" rows="3"></textarea>
@@ -105,31 +118,33 @@
                             <div class="form-row" id='mediaFile'>
                                 <div class='form-group col-auto'>
                                     <input type="file" class="form-control-file" id="ControlFile1">
-                                    <label for='ControlFile1' >Image 1</label>
+                                    <label for='ControlFile1' ><i class="fa fa-plus" style='font-size: 70px;' aria-hidden="true"></i></label>
                                 </div>
                                 <div class='form-group col-auto'>
                                     <input type="file" class="form-control-file" id="ControlFile2">
-                                    <label for='ControlFile2'>Image 2</label>
+                                    <label for='ControlFile2'><i class="fa fa-plus" style='font-size: 70px;' aria-hidden="true"></i></label>
                                 </div>
                                 <div class='form-group col-auto'>
                                     <input type="file" class="form-control-file" id="ControlFile3">
-                                    <label for='ControlFile3'>Image 3</label>
+                                    <label for='ControlFile3'><i class="fa fa-plus" style='font-size: 70px;' aria-hidden="true"></i></label>
                                 </div>
                                 <div class='form-group col-auto'>
                                     <input type="file" class="form-control-file" id="ControlFile4">
-                                    <label for='ControlFile4'>Image 4</label>
+                                    <label for='ControlFile4'><i class="fa fa-plus" style='font-size: 70px;' aria-hidden="true"></i></label>
                                 </div>
                             </div>
                            
                             <div class="form-group">
                                 <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <input class="form-check-input" type="checkbox" checked id="gridCheck">
                                 <label class="form-check-label" for="gridCheck">
                                 J'accepte les termes and conditions
                                 </label>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary mb-5">Envoyer</button>
+
+                            <button type="submit" class="btn btn-primary mb-5"><i class="fa fa-plus"  aria-hidden="true"></i> Poster l'annonce</button>
+                            <button type="reset" class="btn btn-danger mb-5">Annuler</button>
                         </form>
                     </div>
                 </div>
