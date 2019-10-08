@@ -1,7 +1,7 @@
 <?php
 
 
-class Announces extends Db
+class Model extends Db
 {
 
     private

@@ -1,7 +1,7 @@
 <?php
 
 
-class Book
+abstract class Book
 {
     private $alpha, $num,
         $nbr, $ch;

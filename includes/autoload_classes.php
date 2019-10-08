@@ -9,5 +9,5 @@ spl_autoload_register(function ($class){
 });
 
 $validate = new Validator;
-$announces = new Announces;
+$announces = new Model;
 $counter = new CounterView;

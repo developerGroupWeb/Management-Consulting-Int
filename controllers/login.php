@@ -8,9 +8,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])){
     if($validate->success() == true){
 
 
-        $result = $announces->get('admin', ['admin', '=', $log]);
+        $result = $announces->get('admins', ['user_name', '=', $log]);
 
-        if($result->count() == 0){
+        if($result->count() === 0){
             $validate->flash['row_email'] = 'This email or number does not correspond to a user';
         }else{
 

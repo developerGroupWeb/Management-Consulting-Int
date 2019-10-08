@@ -18,11 +18,9 @@
                 </li>
             </ul>
 
-<<<<<<< HEAD
+
             <a href="<?=(isset($path))? $path : ''?>=all-announces" class='navbar-nav btn btn-warning px-3 py-3'>Consulter les annonces</a>
-=======
-            <a href="<?=(isset($path))? $path : ''?>=announces" class='navbar-nav btn btn-warning px-3 py-3 mr-2'>Consulter les annonces</a>
->>>>>>> b6d367901c05b2f2536b22b87ccc96895e76122e
+
 
             <a href="<?=(isset($path))? $path : ''?>=login" class='navbar-nav btn btn-primary px-3 py-3'>Déposer une annonce</a>
 

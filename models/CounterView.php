@@ -1,7 +1,7 @@
 <?php
 
 
-class CounterView extends Announces
+class CounterView extends Model
 {
     private $file = 'data/counter.txt';
 
