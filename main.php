@@ -108,7 +108,7 @@
                         <p class="card-text"><?=$counter->number_views('1254789')?></p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <small class="text-muted"><?=time_ago('2019-10-9 12:52:36')?></small>
                     </div>
                 </div>
                 <div class="card">
@@ -121,7 +121,7 @@
                         <p class="card-text"><?=$counter->number_views('12547')?></p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <small class="text-muted"><?=time_ago('2019-10-8 12:52:36')?></small>
                     </div>
                 </div>
 
@@ -137,7 +137,7 @@
                         <p class="card-text"><?=$counter->number_views('125784')?></p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <small class="text-muted"><?=time_ago('2019-10-6 12:52:36')?></small>
                     </div>
                 </div>
                 <div class="card">
@@ -150,7 +150,7 @@
                         <p class="card-text"><?=$counter->number_views('125484')?></p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <small class="text-muted"><?=time_ago('2019-10-2 12:52:36')?></small>
                     </div>
                 </div>
             </div>
