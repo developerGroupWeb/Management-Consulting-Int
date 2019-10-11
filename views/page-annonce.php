@@ -1,6 +1,6 @@
-<div class='container pt-5'>
+<div class='container pt-5' id='all-annonces'>
     <div class='row'>
-        <div class='col-md-3'>
+        <div class='col-lg-3'>
             <div class='bg-light row mb-5 py-3 '>
                 <div class='col-12'>
                     <p class='font-weight-bold'>Recherche par Filtre</p>
@@ -65,26 +65,44 @@
             </div>
         </div>
 
-        <div class='col-md-auto px-4'>
+        <div class='col-lg-6 px-4'>
             <div class='row'>
-                <div class="card mb-3" style="max-width: 540px;">
+                <div class="card mb-4" style="max-width: 540px;">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                         <img src="https://via.placeholder.com/150" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <div class="card-body">
+                                <div class='mb-2'>
+                                    <h5 class="card-title"><a href=''>Card title This is a wider card with supporting text below ...</a></h5>
+                                    <span class="badge badge-primary">Primary</span>
+                                    <span class='font-weight-bold'>Prix CFA</span>
+                                </div>
+
+                                <p class="card-text">DESCRIPTION This is a wider card with supporting text below as a natural lead-in to additional content. This content ...</p>
+
+                                <div class='d-flex '>
+                                    <p class='mr-4'><i class="fa fa-clock-o" aria-hidden="true"></i>  <span class="text-muted">Time</span></p>
+
+                                    <p><i class="fa fa-eye" aria-hidden="true"></i> <span class="text-muted">Vues</span></p>
+                                </div>
+                            </div>
                         </div>
-                        </div>
+                    </div>
+
+                    <hr class='row'>
+                        
+                    <div class='d-flex'>
+                        <p class="text-muted mr-4 ml-2"><i class="fa fa-folder-open" aria-hidden="true"></i> <small class="font-weight-bold"><a href=''>Categorie</a></small></p>
+
+                        <p class="font-weight-bold text-muted"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="font-weight-bold"><a href='' class=''>Location</a></span></p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class='col-md-3 border'>
+        <div class='col-lg-3 border'>
             <div class='row'>
                 <p class='mx-auto'>Espace publicite</p>
             </div>

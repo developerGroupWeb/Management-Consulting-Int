@@ -101,10 +101,13 @@
                 <div class="card">
                     <a href="<?=(isset($path))? $path : ''?>=show&id=1254789"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Prix</p>
-                        <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> Categorie</p>
-                        <p class="card-text">Ville</p>
+                        <h5 class="card-title"><a href=''>Card title</a></h5>
+                        <p class="card-text">Prix CFA</p>
+
+                        <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> <a href=''>Categorie</a></p>
+
+                        <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> <a href=''> Ville</a></p>
+                        
                         <p class="card-text"><?=$counter->number_views('1254789')?></p>
                     </div>
                     <div class="card-footer">
@@ -117,7 +120,7 @@
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Prix</p>
                         <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> Categorie</p>
-                        <p class="card-text">Ville</p>
+                        <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> <i class="fa fa-map-marker" aria-hidden="true"></i> Ville</p>
                         <p class="card-text"><?=$counter->number_views('12547')?></p>
                     </div>
                     <div class="card-footer">

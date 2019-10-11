@@ -1,3 +1,4 @@
+
 #search-section ul{
     position: absolute;
     z-index: 100;
@@ -103,4 +104,8 @@
 .form-control-file:focus + label,
 .form-control-file:hover + label{
     background-color: rgb(59, 72, 255);
+}
+
+#all-annonces a{
+    text-decoration: none;
 }
