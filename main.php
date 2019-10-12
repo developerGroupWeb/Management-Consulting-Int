@@ -124,7 +124,7 @@
                         <p class="card-text"><?=$counter->number_views('12547')?></p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"><?=time_ago('2019-10-8 12:52:36')?></small>
+                        <small class="text-muted"><?=time_ago('2019-10-04 12:52:36')?></small>
                     </div>
                 </div>
 

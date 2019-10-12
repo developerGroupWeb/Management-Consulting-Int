@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @param $timestamp
+ * @return string
+ */
 function time_ago($timestamp)
 {
     date_default_timezone_set('Benin/Cotonou');
@@ -33,36 +37,34 @@ function time_ago($timestamp)
         }
     } elseif ($hours <= 24) {
 
-        switch ($hours){
-            case 1:
-                $out = "Une minute déjà";
-                break;
-            default:
-                $out = "$hours heures déjà";
-                break;
+        if($hours == 1){
+            $out = "Une heure déjà";
+        }elseif($hours <= 12){
+            $out = "$hours heures déjà";
+        }else{
+            $out = "Aujourd'hui";
         }
 
     } elseif ($days <= 7) {
 
-        switch ($days){
-            case 1:
-                $out = "Hier";
-                break;
-            default:
-                $out = "$days jours déjà";
-                break;
+        if($days == 1){
+            $out = "Hier";
+        }elseif($days <= 5){
+            $out = "$days jours déjà";
+        }else{
+            $out = "Cette semaine";
         }
 
     } elseif ($weeks <= 4.3)// 4.3 = 52/12
     {
-        switch ($weeks){
-            case 1:
-                $out = "Une semaine déjà";
-                break;
-            default:
-                $out = "$weeks semaines déjà";
-                break;
+        if($weeks == 1){
+            $out = "Une semaine déjà";
+        }elseif($weeks <= 3){
+            $out = "$weeks semaines déjà";
+        }else{
+            $out = "Ce mois";
         }
+
     } elseif ($months <= 12) {
 
         switch ($months){
