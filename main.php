@@ -35,14 +35,14 @@
             <div class='row'>
                 <a href="<?=(isset($path))? $path : ''?>=announces&category=emploi" class='col-md py-5 px-2 box1'>
                     <div class='row'>
-                        <h5 class="mx-auto text-center font-weight-bold">EMPLOI</h5>
+                        <h5 class="mx-auto text-center font-weight-bold">Récrutement</h5>
                     </div>
                     
                 </a>
 
                 <a href="<?=(isset($path))? $path : ''?>=announces&category=services" class='col-md py-5 px-2 bg-light ml-md-3 mx-lg-3 mt-4 mt-md-0 box2'>
                     <div class='row  '>
-                        <h5 class='mx-auto text-center'>SERVICES</h5>
+                        <h5 class='mx-auto text-center'>Conseils</h5>
                     </div>
                 </a>
 
@@ -50,7 +50,7 @@
 
                 <a href="<?=(isset($path))? $path : ''?>=announces&category=cours-formation" class='col-md py-5 px-2 bg-light mt-4 mt-lg-0 box3'>
                     <div class='row'>
-                        <h5 class="mx-auto text-center">Cours & Formation</h5>
+                        <h5 class="mx-auto text-center">Audit & Formation</h5>
                     </div>
                 </a>
 
@@ -64,13 +64,13 @@
             <div class='row mt-4'>
                 <a href="<?=(isset($path))? $path : ''?>=announces&category=achat-vente" class='col-md py-5 px-2 bg-light box5'>
                     <div class='row '>
-                        <h5 class="mx-auto text-center">ACHAT - VENTE</h5>
+                        <h5 class="mx-auto text-center">Création de site web</h5>
                     </div>
                 </a>
 
                 <a href="<?=(isset($path))? $path : ''?>=announces&category=immobilier" class='col-md py-5 px-2 bg-light ml-md-3 mx-lg-3 mt-4 mt-md-0 box6'>
                     <div class='row  '>
-                        <h5 class='mx-auto text-center'>Immobilier</h5>
+                        <h5 class='mx-auto text-center'>Immobilier & Mobilier</h5>
                     </div>
                 </a>
 
@@ -125,6 +125,7 @@
                     </div>
                     <div class="card-footer">
                         <small class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago('2019-10-8 12:52:36')?></small>
+                        <small class="text-muted"><?=time_ago('2019-10-04 12:52:36')?></small>
                     </div>
                 </div>
 
