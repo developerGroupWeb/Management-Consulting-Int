@@ -67,6 +67,25 @@
 
         <div class='col-lg-6 px-4'>
             <div class='row'>
+                <div class='col-6'>
+                    <h3 class='font-weight-bold row'>Titre Categorie</h3>
+                </div>
+
+                <div class='col-6'>
+                    <form action="">
+                        <div class="form-group">
+                            <select class="form-control" id="filter">
+                            <option value=''>De A a Z</option>
+                            <option value='' selected>Dernier Ajout</option>
+                            <option value=''>Prix (du moins cher au plus cher)</option>
+                            <option value=''>Prix (du plus cher au plus moins)</option>
+                            <option value=''>Les plus vues</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class='row'>
                 <div class="card mb-4" style="max-width: 540px;">
                     <div class="row no-gutters">
                         <div class="col-md-4">

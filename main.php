@@ -107,11 +107,11 @@
                         <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> <a href=''>Categorie</a></p>
 
                         <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> <a href=''> Ville</a></p>
-                        
-                        <p class="card-text"><?=$counter->number_views('1254789')?></p>
+
+                        <p class="card-text"><i class="fa fa-eye" aria-hidden="true"></i> <?=$counter->number_views('1254789')?></p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"><?=time_ago('2019-10-9 12:52:36')?></small>
+                        <small class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago('2019-10-9 12:52:36')?></small>
                     </div>
                 </div>
                 <div class="card">
@@ -120,11 +120,11 @@
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Prix</p>
                         <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> Categorie</p>
-                        <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> <i class="fa fa-map-marker" aria-hidden="true"></i> Ville</p>
-                        <p class="card-text"><?=$counter->number_views('12547')?></p>
+                        <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Ville</p>
+                        <p class="card-text"><i class="fa fa-eye" aria-hidden="true"></i> <?=$counter->number_views('12547')?></p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"><?=time_ago('2019-10-8 12:52:36')?></small>
+                        <small class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago('2019-10-8 12:52:36')?></small>
                     </div>
                 </div>
 
@@ -136,11 +136,11 @@
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Prix</p>
                         <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> Categorie</p>
-                        <p class="card-text">Ville</p>
-                        <p class="card-text"><?=$counter->number_views('125784')?></p>
+                        <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Ville</p>
+                        <p class="card-text"><i class="fa fa-eye" aria-hidden="true"></i> <?=$counter->number_views('125784')?></p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"><?=time_ago('2019-10-6 12:52:36')?></small>
+                        <small class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago('2019-10-6 12:52:36')?></small>
                     </div>
                 </div>
                 <div class="card">
@@ -149,11 +149,11 @@
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Prix</p>
                         <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> Categorie</p>
-                        <p class="card-text">Ville</p>
-                        <p class="card-text"><?=$counter->number_views('125484')?></p>
+                        <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Ville</p>
+                        <p class="card-text"><i class="fa fa-eye" aria-hidden="true"></i> <?=$counter->number_views('125484')?></p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted"><?=time_ago('2019-10-2 12:52:36')?></small>
+                        <small class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago('2019-10-2 12:52:36')?></small>
                     </div>
                 </div>
             </div>
