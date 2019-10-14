@@ -166,7 +166,8 @@ class Model extends Db
      */
     function get($table, $where){
 
-        return $this->action('SELECT *', $table, $where);
+        return $this->action('SELECT *', $table, $where)
+                    ;
     }
 
     /**
@@ -174,7 +175,8 @@ class Model extends Db
      * @return bool|Db
      */
     function findAll($table){
-        return $this->action('SELECT *', $table);
+        return $this->action('SELECT *', $table)
+                    ->results();
     }
 
     /**

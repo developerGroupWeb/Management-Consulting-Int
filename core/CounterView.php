@@ -12,11 +12,11 @@ class CounterView extends Model
     function add_view($ip_addr, $article_id){
 
         $date = time();
-        $row = $this->builderGet('users', ['ip','=', $ip_addr, 'AND', 'article_id', '=', $article_id])
+        $row = $this->builderGet('users', ['ip_addr','=', $ip_addr, 'AND', 'announce_id', '=', $article_id])
                     ->count();
 
         if($row === 0){
-            $this->insert('users', ['ip' => $ip_addr, 'article_id' => $article_id, 'temps' => $date]);
+            $this->insert('users', ['ip_addr' => $ip_addr, 'announce_id' => $article_id, 'created_at' => $date]);
         }
 
     }
@@ -45,7 +45,7 @@ class CounterView extends Model
      * @return mixed
      */
     function counter($article_id){
-        return $this->get('users', ['article_id','=', $article_id])
+        return $this->get('users', ['announce_id','=', $article_id])
                     ->count();
     }
 }

@@ -21,8 +21,9 @@
 
             <a href="<?=(isset($path))? $path : ''?>=all-announces" class='navbar-nav btn btn-warning px-3 py-3 mr-lg-3'>Consulter les annonces</a>
 
-
-            <a href="<?=(isset($path))? $path : ''?>=login" class='navbar-nav btn btn-primary px-3 py-3'>Déposer une annonce</a>
+            <? if($view !== 'admin'):?>
+                <a href="<?=(isset($path))? $path : ''?>=login" class='navbar-nav btn btn-primary px-3 py-3'>Déposer une annonce</a>
+            <? endif;?>
 
         </div>
     </nav>
