@@ -1,7 +1,7 @@
 
 <div class="">
 
-    <?php include 'includes/message_flash.php'?>
+    <?php require 'helpers/message_flash.php' ?>
 
     <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 singin-content px-4">
         <div class="row" style='margin-top: 100px; margin-bottom: 150px;'>
@@ -54,7 +54,7 @@
 <div class="mobile-bg d-block d-sm-none" style="height: 100vh;">
     <div class="container py-5">
 
-        <?php include 'includes/message_flash.php'?>
+        <?php require 'helpers/message_flash.php' ?>
 
         <div class="row pl-4 mt-5">
             <form method="post" action="" class="col-12" id="form-login">
@@ -91,4 +91,4 @@
 </div>-->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/login.js"></script>
+<script src="/public/js/login.js"></script>

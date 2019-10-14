@@ -1,5 +1,6 @@
-<?php include 'includes/header.php';?>
-<?php include 'templates/nav.php';?>
+<?php include 'Views/templates/header.php';?>
+<?php include 'Views/templates/nav.php';?>
+
 
     <title>Management Consulting Int</title>
 
@@ -160,9 +161,9 @@
         </div>
     </section>
 
-<?php include 'templates/footer.php';?>
+<?=extend('footer')?>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
+<script src="public/js/main.js"></script>
 </body>
 </html>

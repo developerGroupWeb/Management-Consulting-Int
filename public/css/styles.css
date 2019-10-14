@@ -33,49 +33,49 @@
 }
 
 #categories .box1{
-    background-image: url(/images/Entretien_Embauche_Blog.jpg);
+    background-image: url(/public/images/Entretien_Embauche_Blog.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #categories .box2{
-    background-image: url(/images/BARTOfficialApp_ServiceAdvisories-365x207.png);
+    background-image: url(/public/images/BARTOfficialApp_ServiceAdvisories-365x207.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #categories .box3{
-    background-image: url(/images/SERVICE-FORMATION-2-1030x617.jpg);
+    background-image: url(/public/images/SERVICE-FORMATION-2-1030x617.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #categories .box4{
-    background-image: url(/images/vente-materiel-professionnel-occasion.jpg);
+    background-image: url(/public/images/vente-materiel-professionnel-occasion.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #categories .box5{
-    background-image: url(/images/achat-vente-rayonnage.jpg);
+    background-image: url(/public/images/achat-vente-rayonnage.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #categories .box6{
-    background-image: url(/images/14546516.jpg);
+    background-image: url(/public/images/14546516.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #categories .box7{
-    background-image: url(/images/owners-service_plans-service_and_maintenance_plans-16_9-2500x1406.jpg);
+    background-image: url(/public/images/owners-service_plans-service_and_maintenance_plans-16_9-2500x1406.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #categories .box8{
-    background-image: url(/images/DSC00137.jpg);
+    background-image: url(/public/images/DSC00137.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

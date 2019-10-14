@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include 'includes/autoload_classes.php';
+require_once 'core/autoload.php';
 
 $view = htmlspecialchars($_GET['view']);
 
@@ -22,9 +22,9 @@ if((isset($_SESSION['email']) or isset($_SESSION['password'])) and $view != 'pro
 $controllers = scandir('controllers');
 if(in_array($view.'.php', $controllers)){
 
-    include('controllers/'.$view.'.php');
+    require_once ('controllers/'.$view.'.php');
 }
 
 
-include('templates/base.php');
+include('./Views/templates/base.php');
 
