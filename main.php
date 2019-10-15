@@ -100,7 +100,7 @@
 
             <div class="card-deck">
 
-                <? foreach ($recent as $item):?>
+                <? foreach ($latest as $item):?>
                 <div class="card">
                     <a href="<?=(isset($path))? $path : ''?>=show&id=<?=$item->id?>"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
                     <div class="card-body">
@@ -119,48 +119,9 @@
                 </div>
                 <? endforeach;?>
 
-                <div class="card">
-                    <a href="<?=(isset($path))? $path : ''?>=show&id=12547"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Prix</p>
-                        <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> Categorie</p>
-                        <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Ville</p>
-                        <p class="card-text"><i class="fa fa-eye" aria-hidden="true"></i> <?=$counter->number_views('12547')?></p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago('2019-10-8 12:52:36')?></small>
-                    </div>
-                </div>
 
                 <div class='w-100 d-none d-sm-block d-lg-none'></div>
 
-                <div class="card">
-                    <a href="<?=(isset($path))? $path : ''?>=show&id=125784"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Prix</p>
-                        <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> Categorie</p>
-                        <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Ville</p>
-                        <p class="card-text"><i class="fa fa-eye" aria-hidden="true"></i> <?=$counter->number_views('125784')?></p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago('2019-10-6 12:52:36')?></small>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="<?=(isset($path))? $path : ''?>=show&id=125484"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Prix</p>
-                        <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> Categorie</p>
-                        <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> Ville</p>
-                        <p class="card-text"><i class="fa fa-eye" aria-hidden="true"></i> <?=$counter->number_views('125484')?></p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago('2019-10-2 12:52:36')?></small>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
