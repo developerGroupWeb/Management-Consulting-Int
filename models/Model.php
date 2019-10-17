@@ -83,12 +83,13 @@ class Model extends Db
      * @param $action
      * @param $table
      * @param $orderBy
+     * @param string $limit
      * @return $this
      */
-    private function actionBy($action, $table, $orderBy){
+    private function actionBy($action, $table, $orderBy, $limit = ''){
 
         $order = (gettype($orderBy) == 'string' && strlen($orderBy) > 8) ? $orderBy : '';
-        $sql = "{$action} FROM {$table} $order";
+        $sql = "{$action} FROM {$table} {$order} LIMIT {$limit}";
         if(!$this->query($sql, [])->error()){
 
             return $this;
@@ -166,7 +167,19 @@ class Model extends Db
      */
     function get($table, $where){
 
-        return $this->action('SELECT *', $table, $where);
+        return $this->action('SELECT *', $table, $where)
+                    ;
+    }
+
+    /**
+     * @param $table
+     * @param $orderBy
+     * @param $limit
+     * @return mixed
+     */
+    function latest($table, $orderBy, $limit){
+        return $this->actionBy('SELECT *', $table, $orderBy, $limit)
+                    ->results();
     }
 
     /**
@@ -174,7 +187,8 @@ class Model extends Db
      * @return bool|Db
      */
     function findAll($table){
-        return $this->action('SELECT *', $table);
+        return $this->action('SELECT *', $table)
+                    ->results();
     }
 
     /**

@@ -1,5 +1,6 @@
 <?php
 require 'core/autoload.php';
+require_once 'controllers/main.php';
 ?>
 <!doctype html>
 <html lang="en">

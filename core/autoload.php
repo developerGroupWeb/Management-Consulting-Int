@@ -4,6 +4,8 @@ require 'helpers/paginate.php';
 require 'helpers/format_date.php';
 require 'helpers/time_ago.php';
 require 'helpers/extends.php';
+require 'core/setting/config.php';
+
 
 
 /*spl_autoload_register(function ($class){

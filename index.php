@@ -14,17 +14,18 @@ if(in_array($view.'.php', $views)){
     header("Location:main.php");
 }
 
-if((isset($_SESSION['email']) or isset($_SESSION['password'])) and $view != 'profile')
+if((isset($_SESSION['email']) || isset($_SESSION['password'])) && $view !== 'admin')
 {
-    header("Location:?view=profile");
+    header("Location:?view=admin");
 }
 
 $controllers = scandir('controllers');
+
 if(in_array($view.'.php', $controllers)){
 
     require_once ('controllers/'.$view.'.php');
 }
 
 
-include('./Views/templates/base.php');
+require_once ('./Views/templates/base.php');
 

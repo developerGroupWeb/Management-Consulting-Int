@@ -12,12 +12,18 @@ abstract class Db
 
     protected function setDb()
     {
+        $config = Config::$databases['dev'];
         try
         {
-            $this->pdo = new PDO('mysql:host=localhost; dbname=management-consulting; charset=utf8', 'root', '');
+            $this->pdo = new PDO('mysql:host='.$config['host'].';dbname='.$config['dbname'].';charset=utf8', $config['user'], $config['password']);
         }catch(PDOException $e)
         {
-            die($e->getMessage());
+            if(Config::$debug >= 1){
+                die($e->getMessage());
+            }else{
+                die('impossible to connect to the database');
+            }
+
         }
     }
 

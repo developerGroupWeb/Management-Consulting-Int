@@ -1,21 +1,25 @@
 
+
 <div class='container pt-5' id='all-annonces'>
+
+    <? if(isset($item)):?>
+
     <div class='row'>
         <div class='col-lg-6 px-4'>
             <div class='row'>
                 <div class='col-6'>
-                    <p class='font-weight-bold row'>Titre Categorie</p>
+                    <p class='font-weight-bold row'><?=$item->title?></p>
                 </div>
 
                 <div class='col-6'>
-                    <p class='text-right'>Prix xxxxx</p>
+                    <p class='text-right'><?=$item->price.'  '.strtoupper($item->devise)?></p>
                 </div>
             </div>
 
             <div class='d-flex'>
-                <p class="text-muted mr-5"><i class="fa fa-folder-open" aria-hidden="true"></i> <small class="font-weight-bold"><a href=''>Categorie</a></small></p>
+                <p class="text-muted mr-5"><i class="fa fa-folder-open" aria-hidden="true"></i> <small class="font-weight-bold"><a href="<?=(isset($path))? $path : ''?>=announces&category=<?=$item->category?>"><?=$item->category?></a></small></p>
 
-                <p class="font-weight-bold text-muted"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="font-weight-bold"><a href='' class=''>Location</a></span></p>
+                <p class="font-weight-bold text-muted"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="font-weight-bold"><a href='' class=''><?=$item->city?></a></span></p>
             </div>
 
             <div class='row mb-4'>
@@ -27,7 +31,7 @@
                     <h5><i class="fa fa-pencil-square-o text-muted" aria-hidden="true"></i> <span>Description</span></h5>
                 
                     <hr class='row my-1'>
-                    <p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea veniam facilis earum voluptates odio? Eaque quaerat aut, nostrum nisi autem iure voluptates itaque ea commodi quam repellendus totam nesciunt amet?</p>
+                    <p class=''><?=$item->description?></p>
                 </div>
             </div>
 
@@ -71,7 +75,7 @@
                 <div class="card">
                     <a href="<?=(isset($path))? $path : ''?>=show&id=1254789"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href=''>Card title</a></h5>
+                        <h5 class="card-title"><a href="<?=(isset($path))? $path : ''?>=show&id=1254789">Card title</a></h5>
                     </div>
                 </div>
                 <div class="card">
@@ -94,11 +98,11 @@
                 <div class='col-12'>
                     <h5 class='font-weight-bold'><i class="fa fa-info-circle" aria-hidden="true"></i> Détails de l'annonce</h5>
 
-                    <p class=""><i class="fa fa-lightbulb-o" aria-hidden="true"></i> ID annonce : <span>xxxxx</span></p>
-                    <p class=""><i class="fa fa-folder-open" aria-hidden="true"></i> Categorie</p>
-                    <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i> Ville</p>
-                    <p class=""><i class="fa fa-eye" aria-hidden="true"></i> <?=$counter->number_views('12547')?></p>
-                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago('2019-10-8 12:52:36')?></p>
+                    <p class=""><i class="fa fa-lightbulb-o" aria-hidden="true"></i> ID annonce : <span><?=$item->id?></span></p>
+                    <p class=""><i class="fa fa-folder-open" aria-hidden="true"></i> <?=$item->category?></p>
+                    <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i> <?=$item->city?></p>
+                    <p class=""><i class="fa fa-eye" aria-hidden="true"></i> <?=$counter->number_views($item->id)?></p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago($item->created_at)?></p>
                 </div>
             </div>
         </div>
@@ -110,3 +114,4 @@
         </div>
     </div>
 </div>
+<? endif;?>

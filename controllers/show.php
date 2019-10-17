@@ -8,3 +8,13 @@ if(isset($_GET['id'])){
     $counter->add_view($ip_addr, $article_id);
 }
 
+
+$id = (isset($_GET['id'])) ? $_GET['id'] : '';
+
+$announce = $announces->get('announces', ['id', '=', $id]);
+$item = current($announce->results());
+
+if ($announce->count() === 0) {
+    header('Location:?view=404');
+}
+
