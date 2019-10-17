@@ -17,9 +17,6 @@
                     <a class="nav-link" href="<?=(isset($path))? $path : ''?>=contact" >Contact</a>
                 </li>
             </ul>
-<<<<<<< HEAD
-=======
-
 
             <a href="<?=(isset($path))? $path : ''?>=all-announces" class='navbar-nav btn btn-warning px-3 py-3 mr-lg-3'>Consulter les annonces</a>
 
@@ -27,7 +24,6 @@
                 <a href="<?=(isset($path))? $path : ''?>=login" class='navbar-nav btn btn-primary px-3 py-3'>Déposer une annonce</a>
             <? endif;?>
 
->>>>>>> 5996b712b0cfb8567c2950fb0a437aab10ca649c
         </div>
     </nav>
 </div>

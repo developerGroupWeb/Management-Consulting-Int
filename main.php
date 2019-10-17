@@ -56,7 +56,7 @@
                 </div>
             </div>
 
-<<<<<<< HEAD
+
             <div class='mt-5 mb-5 mb-xl-0 col-xl-6'>
                 <div class='row'>
                     <div class='col-12'>
@@ -75,13 +75,13 @@
                                     <p class='mx-auto text-center'>Inverstir en recherche et développement.  Assurer une veille réglementaire et technologique</p>
                                 </div>
                             </div>
-=======
+
                 <a href="<?=(isset($path))? $path : ''?>=announces&category=audit-formation" class='col-md py-5 px-2 bg-light mt-4 mt-lg-0 box3'>
                     <div class='row'>
                         <h5 class="mx-auto text-center">Audit & Formation</h5>
                     </div>
                 </a>
->>>>>>> 5996b712b0cfb8567c2950fb0a437aab10ca649c
+
 
                             <div class='col-md-4'>
                                 <div class='row'>
@@ -182,7 +182,6 @@
 
     <section class='py-5' id='flyer-contact' style='background: #0B173B;'>
         <div class='container'>
-<<<<<<< HEAD
             <div class='row'>
                 <div class='col-md-6 border border-light pb-4 mb-4'>
                     <div class='row my-4'>
@@ -194,7 +193,6 @@
 
                     <div class='row'>
                         <a href='<?=(isset($path))? $path : ''?>=contact' class='btn btn-md p-md-2 px-md-4 btn-outline-info mx-auto font-weight-bold'>Contactez-nous maintenant</a>
-=======
             <div class='row my-4'>
                 <h2 class=''>Annonces récentes</h2>
             </div>
@@ -216,13 +214,13 @@
                     </div>
                     <div class="card-footer">
                         <small class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago($item->created_at)?></small>
->>>>>>> 5996b712b0cfb8567c2950fb0a437aab10ca649c
+
                     </div>
                 </div>
                 <? endforeach;?>
 
 
-<<<<<<< HEAD
+
                 <div class='col-md-6 border border-light pb-4 mb-4'>
                     <div class='row my-4'>
                         <h3 class='text-center mx-auto text-white'>A la recherche d'une opportunité d'affaire ou d'un besoin particulier ?</h3>
@@ -235,14 +233,9 @@
                         <a href='<?=(isset($path))? $path : ''?>=announce' class='btn btn-md py-md-2 px-md-4 btn-outline-info mx-auto font-weight-bold'>Consulter les annonces</a>
                     </div>
                 </div>
-=======
-                <div class='w-100 d-none d-sm-block d-lg-none'></div>
-<<<<<<< HEAD
-                
-=======
 
->>>>>>> 5996b712b0cfb8567c2950fb0a437aab10ca649c
->>>>>>> 96558ebf136b4debc3874f36e7193409d10050f0
+                <div class='w-100 d-none d-sm-block d-lg-none'></div>
+
             </div>
         </div>
     </section>
