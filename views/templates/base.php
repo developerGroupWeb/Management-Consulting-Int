@@ -24,7 +24,7 @@
 </head>
 <body>
 
-<?php require 'Views/templates/nav.php';?>
+<?php require 'Views/templates/nav-page.php';?>
 
 <?php include $content; ?>
 

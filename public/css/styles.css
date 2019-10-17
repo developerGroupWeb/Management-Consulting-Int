@@ -1,4 +1,5 @@
 
+
 #search-section ul{
     position: absolute;
     z-index: 100;
@@ -108,4 +109,12 @@
 
 #all-annonces a{
     text-decoration: none;
+}
+
+#header-page{
+    background-image: url(/public/images/adeolu-eletu-lWVoW8LpcEQ-unsplash0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
