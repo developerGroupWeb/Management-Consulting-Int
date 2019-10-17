@@ -1,18 +1,10 @@
-<?php
-if(isset($_SESSION['email']) && isset($_SESSION['password'])){
-    echo "Welcome {$_SESSION['email']} <br/> <br/><a class='btn btn-group-lg btn-info' href='?view=logout'>Log out</a><br/><br/>";
-}else{
-    header('Location:main.php');
-}
-
-
 
 
 
 
 <div class="">
 
-<?php require 'helpers/message_flash.php' ?>
+<?php  require 'helpers/message_flash.php' ?>
 
 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 singin-content px-4">
     <div class="row" style='margin-top: 100px; margin-bottom: 150px;'>

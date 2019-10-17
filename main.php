@@ -187,7 +187,6 @@
                         <a href='<?=(isset($path))? $path : ''?>=contact' class='btn btn-md p-md-2 px-md-4 btn-outline-info mx-auto font-weight-bold'>Contactez-nous maintenant</a>
                     </div>
                 </div>
-
                 <div class='col-md-6 border border-light pb-4 mb-4'>
                     <div class='row my-4'>
                         <h3 class='text-center mx-auto text-white'>A la recherche d'une opportunité d'affaire ou d'un besoin particulier ?</h3>
@@ -200,7 +199,7 @@
                         <a href='<?=(isset($path))? $path : ''?>=announce' class='btn btn-md py-md-2 px-md-4 btn-outline-info mx-auto font-weight-bold'>Consulter les annonces</a>
                     </div>
                 </div>
-                <div class='w-100 d-none d-sm-block d-lg-none'></div>
+
             </div>
         </div>
     </section>
