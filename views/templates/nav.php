@@ -14,7 +14,14 @@
                     <a class="nav-link" href="/about">A propos</a>
                 </li>
                 <li class="nav-item px-3">
+<<<<<<< HEAD
                     <a class="nav-link" href="/contact" >Contact</a>
+=======
+                    <a class="nav-link" href="<?=(isset($path))? $path : ''?>=services" tabindex="-1" aria-disabled="true">Nos services</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="<?=(isset($path))? $path : ''?>=contact" >Contact</a>
+>>>>>>> 20ea34e85e26ba0a6ffff1bc56f20a999128f25c
                 </li>
             </ul>
 

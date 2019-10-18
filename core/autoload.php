@@ -1,5 +1,8 @@
 <?php
 require 'core/setting/config.php';
+require 'models/model.php';
+require 'models/Db.php';
+
 spl_autoload_register(function($class_name){
 
     if(file_exists('./core/'.$class_name.'.php')){
