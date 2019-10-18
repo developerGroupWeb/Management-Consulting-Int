@@ -1,16 +1,15 @@
 
-<?
-//print_r($params);
-?>
-
 
 <div class="">
 
-<?php  require 'helpers/message_flash.php' ?>
+
 
 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 singin-content px-4">
     <div class="row" style='margin-top: 100px; margin-bottom: 150px;'>
         <div class="col-12 col-md-8 offset-md-2 btn border p-4">
+
+            <?php  require_once 'helpers/message_flash.php' ?>
+
             <div class="row py-4">
                 <h4 class='mx-auto'>Administration </h4>
             </div>

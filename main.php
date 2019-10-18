@@ -184,7 +184,7 @@
                     </div>
 
                     <div class='row'>
-                        <a href='<?=(isset($path))? $path : ''?>=contact' class='btn btn-md p-md-2 px-md-4 btn-outline-info mx-auto font-weight-bold'>Contactez-nous maintenant</a>
+                        <a href='/contact' class='btn btn-md p-md-2 px-md-4 btn-outline-info mx-auto font-weight-bold'>Contactez-nous maintenant</a>
                     </div>
                 </div>
                 <div class='col-md-6 border border-light pb-4 mb-4'>
@@ -196,7 +196,7 @@
                     </div>
 
                     <div class='row'>
-                        <a href='<?=(isset($path))? $path : ''?>=announce' class='btn btn-md py-md-2 px-md-4 btn-outline-info mx-auto font-weight-bold'>Consulter les annonces</a>
+                        <a href='/all-announces' class='btn btn-md py-md-2 px-md-4 btn-outline-info mx-auto font-weight-bold'>Consulter les annonces</a>
                     </div>
                 </div>
 
