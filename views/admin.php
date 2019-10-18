@@ -1,5 +1,7 @@
 
-
+<?
+//print_r($params);
+?>
 
 
 <div class="">
