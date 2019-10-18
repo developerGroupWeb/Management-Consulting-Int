@@ -112,5 +112,11 @@
                 </div>
                 <? endforeach;?>
             </div>
+            
+            <div class='row mt-5'>
+                <div class='mx-auto'>
+                    <a href="" class='btn btn-outline-primary px-4 font-weight-bold py-3'>Consultez toutes les annonces</a>
+                </div>
+            </div>
         </div>
     </section>
