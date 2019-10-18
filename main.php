@@ -56,7 +56,6 @@
                 </div>
             </div>
 
-
             <div class='mt-5 mb-5 mb-xl-0 col-xl-6'>
                 <div class='row'>
                     <div class='col-12'>
@@ -75,13 +74,6 @@
                                     <p class='mx-auto text-center'>Inverstir en recherche et développement.  Assurer une veille réglementaire et technologique</p>
                                 </div>
                             </div>
-
-                <a href="<?=(isset($path))? $path : ''?>=announces&category=audit-formation" class='col-md py-5 px-2 bg-light mt-4 mt-lg-0 box3'>
-                    <div class='row'>
-                        <h5 class="mx-auto text-center">Audit & Formation</h5>
-                    </div>
-                </a>
-
 
                             <div class='col-md-4'>
                                 <div class='row'>
@@ -193,34 +185,8 @@
 
                     <div class='row'>
                         <a href='<?=(isset($path))? $path : ''?>=contact' class='btn btn-md p-md-2 px-md-4 btn-outline-info mx-auto font-weight-bold'>Contactez-nous maintenant</a>
-            <div class='row my-4'>
-                <h2 class=''>Annonces récentes</h2>
-            </div>
-
-            <div class="card-deck">
-
-                <? foreach ($latest as $item):?>
-                <div class="card">
-                    <a href="<?=(isset($path))? $path : ''?>=show&id=<?=$item->id?>"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="<?=(isset($path))? $path : ''?>=show&id=<?=$item->id?>"><?=$item->title?></a></h5>
-                        <p class="card-text"><?=$item->price.'  '.strtoupper($item->devise)?></p>
-
-                        <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> <a href="<?=(isset($path))? $path : ''?>=announces&category=<?=$item->category?>"><?=$item->category?></a></p>
-
-                        <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> <a href=''> <?=$item->city?></a></p>
-
-                        <p class="card-text"><i class="fa fa-eye" aria-hidden="true"></i> <?=$counter->number_views($item->id)?></p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago($item->created_at)?></small>
-
                     </div>
                 </div>
-                <? endforeach;?>
-
-
-
                 <div class='col-md-6 border border-light pb-4 mb-4'>
                     <div class='row my-4'>
                         <h3 class='text-center mx-auto text-white'>A la recherche d'une opportunité d'affaire ou d'un besoin particulier ?</h3>
@@ -233,8 +199,6 @@
                         <a href='<?=(isset($path))? $path : ''?>=announce' class='btn btn-md py-md-2 px-md-4 btn-outline-info mx-auto font-weight-bold'>Consulter les annonces</a>
                     </div>
                 </div>
-
-                <div class='w-100 d-none d-sm-block d-lg-none'></div>
 
             </div>
         </div>

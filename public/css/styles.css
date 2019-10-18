@@ -1,4 +1,23 @@
 
+#navbarSupportedContent a{
+    color: aliceblue;
+}
+
+#navbarSupportedContent .nav-item{
+    border: 2px solid transparent;
+}
+
+#navbarSupportedContent .nav-item:hover,
+#navbarSupportedContent .nav-item:focus,
+#navbarSupportedContent .nav-item:active{
+    
+    border: 2px solid #13475a;
+    border-radius: 15px;
+}
+
+#navbarSupportedContent .nav-item:hover a{
+    color: #00a8e6;
+}
 
 #search-section ul{
     position: absolute;
