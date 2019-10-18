@@ -14,6 +14,9 @@
                     <a class="nav-link" href="<?=(isset($path))? $path : ''?>=about">A propos</a>
                 </li>
                 <li class="nav-item px-3">
+                    <a class="nav-link" href="<?=(isset($path))? $path : ''?>=services" tabindex="-1" aria-disabled="true">Nos services</a>
+                </li>
+                <li class="nav-item px-3">
                     <a class="nav-link" href="<?=(isset($path))? $path : ''?>=contact" >Contact</a>
                 </li>
             </ul>

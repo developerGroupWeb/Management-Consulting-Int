@@ -5,7 +5,16 @@
     <title>Management Consulting Int</title>
 
     <section class='position-relative' id='mathero'>
-        <ul class="slideshow list-unstyled">
+        <div class='container-fluid' style='background: rgba(0,0,0,0.6); height: 100vh;'>
+            <div class='row'>
+                <div class='col-md-10 offset-md-1'>
+                    <h1 class='text-white text-center text-lg-left'><span style=''>Bienvenue sur</span> <br> <span class='text-uppercase' style='font-weight: bold; color: #00a8e6;'>Management Consulting</span>  <span style='font-weight: 500; color: #8cc41f;'>International</span></h1>
+
+                    <a href='#our-services' class='btn btn-outline-primary px-4 py-3 text-uppercase '>Consultez Nos services</a>
+                </div>
+            </div>
+        </div>
+        <!--<ul class="slideshow list-unstyled">
             <li>
                 <span>Image 01</span>
                 <div class='li1-content'><h3>Bienvenue sur Management Consulting Int</h3></div>
@@ -31,7 +40,7 @@
                 <span>Image 06</span>
                 <div class='li1-content'><h3>Conception et Montage</h3></div>
             </li>
-        </ul>
+        </ul>-->
     </section>
 
     <section class='' id='about-us-hero' style='background-color: #6f42c1; margin-top:-20px;'>

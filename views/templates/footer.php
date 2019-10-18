@@ -57,7 +57,7 @@
 <section id='footer' class='py-5' style='margin-top: 100px; background: #070719;'>
     <footer class='container text-white'>
         <div class='row'>
-            <div class='col-md-6'>
+            <div class='col-md-6 text-center text-md-left'>
                 <p class=''>Copyright © <?=date('Y')?> - Management Consulting Int</p>
                 <p class=''> Tous droits réservés</p>
             </div>
@@ -65,7 +65,7 @@
 
             <div class='col-md-6'>
                 <div class='row'>
-                    <div class='ml-auto'>
+                    <div class='m-auto'>
                         <a href='https://api.whatsapp.com/send?phone=0022670462801' class='text-center mr-3 btn btn-light'> <i class="fa fa-whatsapp fa-2x text-success" aria-hidden="true"></i> <span class=''>whatsapp</span></a>
                         <a href='' class='text-center btn btn-light'><i class="fa fa-facebook-square fa-2x text-primary" aria-hidden="true"></i> <span class=''>facebook</span></a>
                     </div>
