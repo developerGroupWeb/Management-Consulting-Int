@@ -1,8 +1,10 @@
 <?php
-$category = (isset($_GET['category'])) ? $_GET['category'] : '';
 
-$all = $announces->get('announces', ['category', '=', $category]);
+$all_announces = $announces->findAll('announces');
 
-if($all->count() === 0){
-    header('Location:?view=404');
+
+if(isset($params)){
+
+    $detach = explode('=', $params[0]);
+    $page = (is_numeric(end($detach))) ? end($detach) : 0 ;
 }

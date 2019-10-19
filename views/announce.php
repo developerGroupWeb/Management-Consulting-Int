@@ -1,122 +1,117 @@
-<section class='bg-primary py-5' id='search-section'>
-        <div class='container'>
+
+
+<div class='container pt-5' id='all-annonces'>
+
+    <? if(isset($item)):?>
+
+    <div class='row'>
+        <div class='col-lg-6 px-4'>
             <div class='row'>
-                <form class="form-group col-10 offset-1 col-md-8 offset-md-2">
-                    <div class='row'>
-                        <div class='col-md-8'>
-                            <div class='row'>
-                                <input class="form-control col-12 py-4" type="search" placeholder="Recherche" aria-label="Search">
+                <div class='col-6'>
+                    <p class='font-weight-bold row'><?=$item->title?></p>
+                </div>
 
-                                <ul class='col-12 list-unstyled mt-5 bg-white d-none'>
-                                    <li>texte1</li>
-                                    <li>texte2</li>
-                                    <li>texte3</li>
-                                    <li>texte4</li>
-                                    <li>texte5</li>
-                                    <li>texte6</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <button class="btn btn-outline-warning ml-md-2 mt-3 mt-md-0 text-white col-md-3" type="submit">Recherche</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section id='categories' class='py-5'>
-        <div class='container py-5 '>
-            <div class='row'>
-                <a href="/category/emploi" class='col-md py-5 px-2 box1'>
-                    <div class='row'>
-                        <h5 class="mx-auto text-center font-weight-bold">Récrutement</h5>
-                    </div>
-                    
-                </a>
-
-                <a href="/category/services" class='col-md py-5 px-2 bg-light ml-md-3 mx-lg-3 mt-4 mt-md-0 box2'>
-                    <div class='row  '>
-                        <h5 class='mx-auto text-center'>Conseils</h5>
-                    </div>
-                </a>
-
-                <div class='w-100 d-none d-sm-block d-lg-none'></div>
-
-                <a href="/category/cours-formation" class='col-md py-5 px-2 bg-light mt-4 mt-lg-0 box3'>
-                    <div class='row'>
-                        <h5 class="mx-auto text-center">Audit & Formation</h5>
-                    </div>
-                </a>
-
-                <a href="/category/materiel-professionnel" class='col-md py-5 px-2 bg-light ml-md-3 mt-4 mt-lg-0 box4'>
-                    <div class='row'>
-                        <h5 class='mx-auto text-center'>MATÉRIEL PROFESSIONNEL</h5>
-                    </div>
-                </a>
+                <div class='col-6'>
+                    <p class='text-right'><?=$item->price.'  '.strtoupper($item->devise)?></p>
+                </div>
             </div>
 
-            <div class='row mt-4'>
-                <a href="/category/achat-vente" class='col-md py-5 px-2 bg-light box5'>
-                    <div class='row '>
-                        <h5 class="mx-auto text-center">Création de site web</h5>
-                    </div>
-                </a>
+            <div class='d-flex'>
+                <p class="text-muted mr-5"><i class="fa fa-folder-open" aria-hidden="true"></i> <small class="font-weight-bold"><a href="/category/<?=$item->category?>"><?=$item->category?></a></small></p>
 
-                <a href="/category/immobilier" class='col-md py-5 px-2 bg-light ml-md-3 mx-lg-3 mt-4 mt-md-0 box6'>
-                    <div class='row  '>
-                        <h5 class='mx-auto text-center'>Immobilier & Mobilier</h5>
-                    </div>
-                </a>
-
-                <div class='w-100 d-none d-sm-block d-lg-none'></div>
-
-                <a href="/category/vehicules" class='col-md py-5 px-2 bg-light mt-4 mt-lg-0 box7'>
-                    <div class='row'>
-                        <h5 class="mx-auto text-center">Véhicules</h5>
-                    </div>
-                </a>
-
-                <a href="/category/electronique-media" class='col-md py-5 px-2 bg-light ml-md-3 mt-4 mt-lg-0 box8'>
-                    <div class='row'>
-                        <h5 class='mx-auto text-center'>Electronique-Média</h5>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class='pb-5'>
-        <div class='container'>
-            <div class='row my-4'>
-                <h2 class=''>Annonces récentes</h2>
+                <p class="font-weight-bold text-muted"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="font-weight-bold"><a href='' class=''><?=$item->city?></a></span></p>
             </div>
 
-            <div class="card-deck">
-                <? foreach ($latest as $item):?>
+            <div class='row mb-4'>
+                <img src="https://via.placeholder.com/150" class="img-fluid w-100 img-thumbnail" alt="..."> 
+            </div>
+
+            <div class='row bg-light p-2 mb-4'>
+                <div class='col-12'>
+                    <h5><i class="fa fa-pencil-square-o text-muted" aria-hidden="true"></i> <span>Description</span></h5>
+                
+                    <hr class='row my-1'>
+                    <p class=''><?=$item->description?></p>
+                </div>
+            </div>
+
+            <!--<div class='row bg-light p-2 mb-4'>
+                <div class='col-12'>
+                    <h5><i class="fa fa-pie-chart text-muted" aria-hidden="true"></i> <span>Plus de Détails</span></h5>
+                
+                    <hr class='row my-1'>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                        
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            
+                            </tr>
+                            <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>-->
+
+            <h5 class='row'>Annonces Similaires</h5>
+                
+            <hr class='row mt-1 mb-4'>
+
+            <div class="card-deck mb-4">
                 <div class="card">
-                    <a href="<?=(isset($path))? $path : ''?>=show&id=<?=$item->id?>"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
+                    <a href="/announce/1254789"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="<?=(isset($path))? $path : ''?>=show&id=<?=$item->id?>"><?=$item->title?></a></h5>
-                        <p class="card-text"><?=$item->price.'  '.strtoupper($item->devise)?></p>
-
-                        <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> <a href="<?=(isset($path))? $path : ''?>=announces&category=<?=$item->category?>"><?=$item->category?></a></p>
-
-                        <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> <a href=''> <?=$item->city?></a></p>
-
-                        <p class="card-text"><i class="fa fa-eye" aria-hidden="true"></i> <?=$counter->number_views($item->id)?></p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago($item->created_at)?></small>
+                        <h5 class="card-title"><a href=/announce/1254789">Card title</a></h5>
                     </div>
                 </div>
-                <? endforeach;?>
-            </div>
-            
-            <div class='row mt-5'>
-                <div class='mx-auto'>
-                    <a href="" class='btn btn-outline-primary px-4 font-weight-bold py-3'>Consultez toutes les annonces</a>
+                <div class="card">
+                    <a href=""><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href=""><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+
+        <div class='col-lg-3'>
+            <div class='bg-light row mb-5 py-3 '>
+                <div class='col-12'>
+                    <h5 class='font-weight-bold'><i class="fa fa-info-circle" aria-hidden="true"></i> Détails de l'annonce</h5>
+
+                    <p class=""><i class="fa fa-lightbulb-o" aria-hidden="true"></i> ID annonce : <span><?=$item->id?></span></p>
+                    <p class=""><i class="fa fa-folder-open" aria-hidden="true"></i> <?=$item->category?></p>
+                    <p class=""><i class="fa fa-map-marker" aria-hidden="true"></i> <?=$item->city?></p>
+                    <p class=""><i class="fa fa-eye" aria-hidden="true"></i> <?=$counter->number_views($item->id)?></p>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago($item->created_at)?></p>
+                </div>
+            </div>
+        </div>
+
+        <div class='col-lg-3 border'>
+            <div class='row'>
+                <p class='mx-auto'>Espace publicite</p>
+            </div>
+        </div>
+    </div>
+</div>
+<? endif;?>

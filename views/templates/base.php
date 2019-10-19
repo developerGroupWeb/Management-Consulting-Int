@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -29,7 +30,7 @@
 </head>
 <body>
 
-<?php require 'Views/templates/nav-page.php';?>
+<?php require'views/templates/nav-page.php';?>
 
 <?php include $content; ?>
 

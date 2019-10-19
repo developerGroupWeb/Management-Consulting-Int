@@ -1,7 +1,6 @@
 <?php
 session_start();
-
-require_once 'core/autoload.php';
+require_once 'core/includes.php';
 
 
 new Dispatcher();

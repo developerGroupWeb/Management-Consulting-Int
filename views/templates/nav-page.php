@@ -1,3 +1,4 @@
+
 <div class=''>
     <nav class="navbar navbar-expand-lg w-100 py-3" id='navbar' style="z-index: 10000; background-color: rgba(0,0,0,0.7); position: fixed; top: 0;">
         <a class="navbar-brand font-weight-bold" href=""><img src="/public/images/My-logo.png" alt="" class='img-fluid'></a>
@@ -14,14 +15,11 @@
                     <a class="nav-link" href="/about">A propos</a>
                 </li>
                 <li class="nav-item px-3">
-<<<<<<< HEAD
+
                     <a class="nav-link" href="/contact" tabindex="-1" aria-disabled="true">Contact</a>
-=======
-                    <a class="nav-link" href="<?=(isset($path))? $path : ''?>=services" tabindex="-1" aria-disabled="true">Nos services</a>
                 </li>
                 <li class="nav-item px-3">
-                    <a class="nav-link" href="<?=(isset($path))? $path : ''?>=contact" tabindex="-1" aria-disabled="true">Contact</a>
->>>>>>> 20ea34e85e26ba0a6ffff1bc56f20a999128f25c
+                    <a class="nav-link" href="/services" tabindex="-1" aria-disabled="true">Nos services</a>
                 </li>
             </ul>
 

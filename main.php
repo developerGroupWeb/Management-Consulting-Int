@@ -205,7 +205,7 @@
                     </div>
 
                     <div class='row'>
-                        <a href='/all-announces' class='btn btn-md py-md-2 px-md-4 btn-outline-info mx-auto font-weight-bold'>Consulter les annonces</a>
+                        <a href='/recent-announce' class='btn btn-md py-md-2 px-md-4 btn-outline-info mx-auto font-weight-bold'>Consulter les annonces</a>
                     </div>
                 </div>
 

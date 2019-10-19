@@ -7,6 +7,7 @@ class Dispatcher
 
     public function __construct()
     {
+
         $this->request = new Request();
 
         # Injection Request object
@@ -26,15 +27,16 @@ class Dispatcher
             header("Location:main.php");
         }
 
-        if((isset($_SESSION['email']) || isset($_SESSION['password'])) && $view !== 'admin')
+        if((isset($_SESSION['email']) || isset($_SESSION['password'])) && $view !== 'admin-lock')
         {
-            header("Location:?view=admin");
+            header("Location:/admin-lock");
         }
 
         $controllers = scandir('controllers');
 
         if(in_array($view.'.php', $controllers)){
 
+            require  'core/setting/autoload.php';
             require_once ('controllers/'.$view.'.php');
         }
 
