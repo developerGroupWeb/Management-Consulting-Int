@@ -17,7 +17,7 @@
             </div>
 
             <div class='d-flex'>
-                <p class="text-muted mr-5"><i class="fa fa-folder-open" aria-hidden="true"></i> <small class="font-weight-bold"><a href="/category/<?=$item->category?>"><?=$item->category?></a></small></p>
+                <p class="text-muted mr-5"><i class="fa fa-folder-open" aria-hidden="true"></i> <small class="font-weight-bold"><a href=""><?=$item->category?></a></small></p>
 
                 <p class="font-weight-bold text-muted"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="font-weight-bold"><a href='' class=''><?=$item->city?></a></span></p>
             </div>
