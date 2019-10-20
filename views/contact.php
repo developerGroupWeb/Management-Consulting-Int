@@ -6,38 +6,50 @@
             </div>
 
             <div class='col-md-6'>
+
+                <div class="alert d-none result">
+
+                </div>
+
                 <div class='row'>
                     <h2 class='mx-auto mb-5'>Formulaire de contact</h2>
                 </div>
 
                 <div class='row'>
-                    <form class='col-12' action=''>
+                    <form method="post" class='col-12' action='' id="form-contact">
                         <div class="row">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Votre Prenom">
+                                <input type="text" name="first_name" id="first-name" class="form-control" placeholder="Votre Prenom" value="<?= $validate->post('first_name')?>">
+                                <span class="text-danger error-first-name font-italic"><?= $validate->error("first_name")?></span>
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Votre Nom">
+                                <input type="text" name="last_name" id="last-name" class="form-control" placeholder="Votre Nom" value="<?= $validate->post('last_name')?>">
+                                <span class="text-danger error-last-name font-italic"><?= $validate->error("last_name")?></span>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label ></label>
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" value="<?= $validate->post('email')?>">
+                            <span class="text-danger error-email font-italic"><?= $validate->error("email")?></span>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control" id="subject" placeholder="Quel est le sujet du message?">
+                            <input type="text" name="subject" class="form-control" id="subject" placeholder="Quel est le sujet du message?" value="<?= $validate->post('subject')?>">
+                            <span class="text-danger error-subject font-italic"><?= $validate->error("subject")?></span>
                         </div>
 
                         <div class="form-group">
-                            <textarea class="form-control" placeholder='Votre Message' id="message" rows="3"></textarea>
+                            <textarea name="message" class="form-control" placeholder='Votre Message' id="message" rows="3" style="<?= ($validate->error('message')) ? "border-color : red" : ''?>"></textarea>
                         </div>
 
-                        <button class='btn btn-primary text-uppercase px-4'>Envoyer</button>
+                        <button type="submit" name="submit" class='btn btn-primary text-uppercase px-4'>Envoyer</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/public/js/contact.js"></script>

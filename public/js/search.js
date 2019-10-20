@@ -1,27 +1,37 @@
 $(function () {
 
-    const input = $('#form-search').find('#search');
 
-    $(document).on('keyup', input, function () {
+       const input = $('#form-search').find('#search');
+       $(document).on('keyup', input, function () {
+           search();
+       });
 
-        let string = input.val();
 
-            $.ajax({
-                url: 'controllers/search.php',
-                type: 'POST',
-                dataType: 'json',
-                async: true,
-                cache: false,
-                data: {string:string},
-                success:function (response) {
+    const search = () => {
 
-                    if(response.title){
-                        $('#form-search').find('ul').removeClass('d-none');
-                    }else{
-                        $('#form-search').find('ul').addClass('d-none');
-                    }
-                }
-            });
+           let string = input.val();
+           let output = $('#form-search').find('ul');
 
-    });
+           if(string === ''){
+               ul.addClass('d-none');
+           }else{
+               $.ajax({
+                   url: 'controllers/search.php',
+                   type: 'POST',
+                   dataType: 'json',
+                   async: true,
+                   cache: false,
+                   data: {string:string},
+                   success:function (response) {
+
+                       if(response){
+
+                           output.removeClass('d-none');
+                           output.html(response);
+                       }
+                   }
+               });
+           }
+    }
+
 });

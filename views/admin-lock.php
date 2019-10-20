@@ -1,11 +1,7 @@
-<?php
-if(isset($_SESSION['email']) && isset($_SESSION['password'])) {
-
-    ?>
 
 
     <div class='container-fluid'>
-        <div class="btn btn-success logout">Logout</div>
+
         <div class='row'>
             <div class='col-md-3 bg-light py-5 font-weight-bold'>
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -19,11 +15,11 @@ if(isset($_SESSION['email']) && isset($_SESSION['password'])) {
 
                     <a class="nav-link btn-outline-primary" id="v-pills-messages-tab" data-toggle="pill"
                        href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages
-                        <span class="badge badge-success">N</span></a>
+                        <span class="badge badge-success"><?=count($all_messages)?></span></a>
 
                     <a class="nav-link btn-outline-primary" id="v-pills-settings-tab" data-toggle="pill"
                        href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Liste
-                        des annonces <span class="badge badge-success">T</span></a>
+                        des annonces <span class="badge badge-success"><?=count($all_announces)?></span></a>
 
                     <a class="nav-link btn-outline-primary" id="v-pills-messages-tab" data-toggle="pill"
                        href="#v-pills-categories" role="tab" aria-controls="v-pills-messages" aria-selected="false">Categories </a>
@@ -168,30 +164,51 @@ if(isset($_SESSION['email']) && isset($_SESSION['password'])) {
                     </div>
 
                     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                        <?= $_SESSION['email'];?>
+
                     </div>
 
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                         aria-labelledby="v-pills-messages-tab">...
+                    <!-- Messages -->
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+                        <?php foreach ($all_messages as $item => $message) : ?>
+                            <div class="content-message-contact mt-4">
+
+                                <div class="d-inline">
+                                    <p>
+                                        <img src="/public/images/profile.jpg" style="width:30px; height: 30px; border-radius: 50%">
+                                        <strong><?=$message['first'].' '.$message['last'].' '.'('.$message['email'].')'?></strong><br/>
+                                        <span><?=$message['message']?></span><br/>
+                                        <i class="text-primary"><?=$message['date']?></i>
+                                    </p>
+                                </div>
+                            </div>
+                        <?php endforeach;?>
+
                     </div>
+
+                    <!-- All announces -->
+
 
                     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
                          aria-labelledby="v-pills-settings-tab">
+
+                        <?foreach ($all_announces as $announce):?>
                         <div class="card ">
-                            <h5 class="card-header">Categorie annonces</h5>
+                            <h5 class="card-header"><?=$announce->category?></h5>
                             <div class="card-body">
-                                <h5 class="card-title">Special title treatment (Titre)</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
-                                    aspernatur perspiciatis ipsam laudantium? Iste a illo quisquam ipsa assumenda quis
-                                    tempora qui iure sapiente, ipsam cum minima, nihil, cumque nulla. (Description)</p>
+                                <h5 class="card-title"><?=$announce->title?></h5>
+                                <p class="card-text"><?=$announce->description?></p>
 
                                 <a href="#" class="btn btn-danger text-uppercase font-weight-bold">Supprimer</a>
                                 <a href="#" class="btn btn-success text-uppercase font-weight-bold">Publier</a>
                                 <a href="#" class="btn btn-secondary text-uppercase font-weight-bold">Editer</a>
                             </div>
-                        </div>
+                        </div><br/>
+                        <?endforeach;?>
+
                     </div>
+
+
 
                     <div class="tab-pane fade" id="v-pills-categories" role="tabpanel"
                          aria-labelledby="v-pills-messages-tab">
@@ -295,7 +312,4 @@ if(isset($_SESSION['email']) && isset($_SESSION['password'])) {
             })
         })
     </script>
-    <?php
-}else{
-    header('Location:/admin');
-}
+

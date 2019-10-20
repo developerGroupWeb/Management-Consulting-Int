@@ -1,5 +1,5 @@
 <?php
-require '../core/setting/config.php';
+require '../core/setting/Config.php';
 
 spl_autoload_register(function ($class_name){
 
@@ -16,13 +16,22 @@ $announces = new Model;
 
 
 $search = $validate->post('string');
-$get = $announces->get('announces', ['id' => $search]);
-$response = $get->results();
+$get = $announces->find('announces', 'title', $search);
 
 $data = [];
-foreach ($response as $value){
-    $data[] = $value->title;
+
+if(count($get) > 0){
+
+
+    foreach ($get as $value){
+
+        $data[] = "<li><a href='/announce/{$value->id}'>$value->title</a> </li>";
+    }
+
+}else{
+
+    $data[] = "<li class='text-danger'>No result found</li>";
 }
 
-
 echo json_encode($data);
+
