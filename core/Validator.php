@@ -120,6 +120,9 @@ class Validator extends Book
 
         $value = $this->post($name);
 
+        $detach = explode('_', $name);
+        $string = implode(' ', $detach);
+
         if(!empty($value)){
 
             if($this->preg_string($value) == 1){
@@ -127,11 +130,11 @@ class Validator extends Book
                 return $value;
             }else{
 
-                $this->errors[$name] = "Your $name contains characters  not allowed";
+                $this->errors[$name] = "Your $string contains characters  not allowed";
             }
         }else{
 
-            $this->errors[$name] = "Field $name is required";
+            $this->errors[$name] = "Field $string is required";
         }
     }
 

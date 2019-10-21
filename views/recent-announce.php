@@ -9,17 +9,12 @@
                                 <input class="form-control col-12 py-4" id="search" type="search" placeholder="Recherche" aria-label="Search">
 
                                 <ul class='col-12 list-unstyled mt-5 bg-white d-none'>
-                                    <li>texte1</li>
-                                    <li>texte2</li>
-                                    <li>texte3</li>
-                                    <li>texte4</li>
-                                    <li>texte5</li>
-                                    <li>texte6</li>
+
                                 </ul>
                             </div>
                         </div>
 
-                        <button class="btn btn-outline-warning ml-md-2 mt-3 mt-md-0 text-white col-md-3" type="submit">Recherche</button>
+                        <button class="btn btn-outline-warning ml-md-2 mt-3 mt-md-0 text-white col-md-3 d-none" type="submit">Recherche</button>
                     </div>
                 </form>
             </div>
@@ -29,14 +24,14 @@
     <section id='categories' class='py-5'>
         <div class='container py-5 '>
             <div class='row'>
-                <a href="/category/emploi/" class='col-md py-5 px-2 box1'>
+                <a href="/category/recrutement" class='col-md py-5 px-2 box1'>
                     <div class='row'>
                         <h5 class="mx-auto text-center font-weight-bold">Récrutement</h5>
                     </div>
                     
                 </a>
 
-                <a href="/category/services/" class='col-md py-5 px-2 bg-light ml-md-3 mx-lg-3 mt-4 mt-md-0 box2'>
+                <a href="/category/services" class='col-md py-5 px-2 bg-light ml-md-3 mx-lg-3 mt-4 mt-md-0 box2'>
                     <div class='row  '>
                         <h5 class='mx-auto text-center'>Conseils</h5>
                     </div>
@@ -44,7 +39,7 @@
 
                 <div class='w-100 d-none d-sm-block d-lg-none'></div>
 
-                <a href="/category/cours-formation" class='col-md py-5 px-2 bg-light mt-4 mt-lg-0 box3'>
+                <a href="/category/audit-formation" class='col-md py-5 px-2 bg-light mt-4 mt-lg-0 box3'>
                     <div class='row'>
                         <h5 class="mx-auto text-center">Audit & Formation</h5>
                     </div>
@@ -96,12 +91,12 @@
             <div class="card-deck">
                 <? foreach ($latest as $item):?>
                 <div class="card">
-                    <a href="<?=(isset($path))? $path : ''?>=show&id=<?=$item->id?>"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
+                    <a href="/announce/<?=$item->id?>"><img src="https://via.placeholder.com/150" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                        <h5 class="card-title"><a href="<?=(isset($path))? $path : ''?>=show&id=<?=$item->id?>"><?=$item->title?></a></h5>
+                        <h5 class="card-title"><a href="/announce/<?=$item->id?>"><?=$item->title?></a></h5>
                         <p class="card-text"><?=$item->price.'  '.strtoupper($item->devise)?></p>
 
-                        <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> <a href="<?=(isset($path))? $path : ''?>=announces&category=<?=$item->category?>"><?=$item->category?></a></p>
+                        <p class="card-text"><i class="fa fa-folder-open" aria-hidden="true"></i> <a href="/category/<?= strtolower($item->category)?>"><?=$item->category?></a></p>
 
                         <p class="card-text"><i class="fa fa-map-marker" aria-hidden="true"></i> <a href=''> <?=$item->city?></a></p>
 

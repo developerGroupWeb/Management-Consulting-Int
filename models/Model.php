@@ -60,7 +60,7 @@ class Model extends Db
 
             if(in_array($operator, $operators)){
 
-                $sql = "{$action} FROM {$table} WHERE {$field} {$operator} ? ";
+                $sql = "{$action} FROM {$table} WHERE {$field} {$operator} ?";
 
                 if(!$this->query($sql, [$value])->error()){
 
@@ -82,14 +82,47 @@ class Model extends Db
     /**
      * @param $action
      * @param $table
+     * @param $where
      * @param $orderBy
-     * @param string $limit
      * @return $this
      */
-    private function actionBy($action, $table, $orderBy, $limit = ''){
+    private function actionBy($action, $table, $where, $orderBy ){
+
+        $order = (gettype($orderBy) == 'string' && strlen($orderBy) > 8) ? $orderBy : '';
+
+        if (gettype($where) == 'array' && count($where) === 3) {
+
+            $operators = ['=', '<', '>', '<=', '>='];
+
+            $field = $where[0];
+            $operator = $where[1];
+            $value = $where[2];
+
+            if (in_array($operator, $operators)) {
+
+                $sql = "{$action} FROM {$table} WHERE {$field} {$operator} ? $order";
+
+                if (!$this->query($sql, [$value])->error()) {
+
+                    return $this;
+                }
+            }
+        }
+    }
+
+    private function actionLimit($action, $table, $orderBy, $limit = null){
 
         $order = (gettype($orderBy) == 'string' && strlen($orderBy) > 8) ? $orderBy : '';
         $sql = "{$action} FROM {$table} {$order} LIMIT {$limit}";
+        if(!$this->query($sql, [])->error()){
+
+            return $this;
+        }
+    }
+
+    private function actionLike($action, $table, $where, $like){
+
+        $sql = "{$action} FROM {$table} WHERE {$where} LIKE '%{$like}%'";
         if(!$this->query($sql, [])->error()){
 
             return $this;
@@ -171,6 +204,8 @@ class Model extends Db
                     ;
     }
 
+
+
     /**
      * @param $table
      * @param $orderBy
@@ -178,7 +213,13 @@ class Model extends Db
      * @return mixed
      */
     function latest($table, $orderBy, $limit){
-        return $this->actionBy('SELECT *', $table, $orderBy, $limit)
+        return $this->actionLimit('SELECT *', $table, $orderBy, $limit)
+                    ->results();
+    }
+
+    function find($table, $where, $like){
+        $like = trim($like);
+        return $this->actionLike('SELECT *', $table, $where, $like)
                     ->results();
     }
 
@@ -193,11 +234,12 @@ class Model extends Db
 
     /**
      * @param $table
+     * @param $where
      * @param $orderBy
      * @return bool|Db
      */
-    function findBy($table, $orderBy){
-        return $this->actionBy('SELECT *', $table, $orderBy);
+    function findBy($table, $where, $orderBy){
+        return $this->actionBy('SELECT *', $table, $where, $orderBy);
     }
 
     /**
