@@ -23,6 +23,8 @@
                         <small class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> <?=time_ago($item->created_at)?></small>
                     </div>
                 </div>
+
+                <div class='w-100 d-md-none'></div>
             <? endforeach;?>
         </div>
 
