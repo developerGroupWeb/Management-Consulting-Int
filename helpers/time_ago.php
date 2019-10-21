@@ -6,7 +6,7 @@
  */
 function time_ago($timestamp)
 {
-    date_default_timezone_set('Benin/Cotonou');
+    
 
     $time_ago = strtotime($timestamp);
     $current_time = time();

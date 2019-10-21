@@ -3,8 +3,8 @@ spl_autoload_register(function ($class_name){
 
     if(file_exists('../core/'.$class_name.'.php')){
         require_once '../core/'.$class_name.'.php';
-    }elseif (file_exists('../Models/'.$class_name.'.php')){
-        require_once '../Models/'.$class_name.'.php';
+    }elseif (file_exists('../models/'.$class_name.'.php')){
+        require_once '../models/'.$class_name.'.php';
     }
 
 });
@@ -12,11 +12,11 @@ spl_autoload_register(function ($class_name){
 $validate = new Validator;
 $announces = new Model;
 
-
+$err = [];
 if(!empty($_POST['submit'])){
 
 
-    $err = [];
+
     $messages = [];
 
     $messages['id'] = date('dmYHis');
@@ -46,6 +46,8 @@ if(!empty($_POST['submit'])){
         file_put_contents($base, $data);
 
         $err['success'] = "Your message has been sent";
+    }else{
+        $err['error'] = "All fields are required";
     }
 
     echo json_encode($err);
